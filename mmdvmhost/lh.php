@@ -4,7 +4,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/mmdvmhost/tools.php';        // MMDVMDa
 include_once $_SERVER['DOCUMENT_ROOT'].'/mmdvmhost/functions.php';    // MMDVMDash Functions
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/language.php';	      // Translation Code
 ?>
-<b>This is a test</b>
+<b>Server Response Times</b><br>
+  <table>
+	<tr>
+	  <th><a class="tooltip" href="#">Brandmeister 3102</a></th>
+	</tr>
 <b><?php echo $lang['last_heard_list'];?></b>
   <table>
     <tr>
