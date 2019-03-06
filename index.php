@@ -51,8 +51,7 @@ $configPistarRelease = parse_ini_file($pistarReleaseConfig, true);
 <body>
 <div class="container">
 <div class="header">
-<div style="font-size: 8px; text-align: left; padding-left: 8px; float: left;">Hostname: <?php echo exec('cat /etc/hostname'); ?></div><div style="font-size: 8px; text-align: right; padding-right: 8px;">Pi-Star:<?php echo $configPistarRelease['Pi-Star']['Version']?> / <?php echo $lang['dashboard'].": ".$version; ?></div>
-<!-- <h1>Pi-Star <?php echo $lang['digital_voice']." ".$lang['dashboard_for']." ".$MYCALL; ?></h1> -->
+<div style="padding-left: 8px; float: left;"></div><div style="padding-right: 8px;">
 <h1>K1LNX Repeater System - Knoxville, TN</h1>
 <p style="padding-right: 5px; text-align: right; color: #ffffff;">
  <a href="https://brandmeister.network/?page=hotspot&id=314700" style="color: #ffffff;"><?php echo $lang['repeaterinfo'];?></a> |
@@ -261,15 +260,6 @@ if (file_exists('/etc/dstar-radio.mmdvmhost')) {
 	echo '<script type="text/javascript">setTimeout(function() { window.location="/admin/configure.php";},10000);</script>'."\n";
 }
 ?>
-</div>
-
-<div class="footer">
-Pi-Star / Pi-Star Dashboard, &copy; Andy Taylor (MW0MWZ) 2014-<?php echo date("Y"); ?>.<br />
-ircDDBGateway Dashboard by Hans-J. Barthen (DL5DI),<br />
-MMDVMDash developed by Kim Huebel (DG9VH), <br />
-Need help? Click <a style="color: #ffffff;" href="https://www.facebook.com/groups/pistarusergroup/" target="_new">here for the Facebook Group</a><br />
-or Click <a style="color: #ffffff;" href="https://forum.pistar.uk/" target="_new">here to join the Support Forum</a><br />	
-Get your copy of Pi-Star from <a style="color: #ffffff;" href="http://www.pistar.uk/downloads/" target="_new">here</a>.<br />
 </div>
 
 </div>
