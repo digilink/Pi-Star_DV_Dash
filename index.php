@@ -49,8 +49,10 @@ $configPistarRelease = parse_ini_file($pistarReleaseConfig, true);
     <script src="/featherlight.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-<div class="header">
 <div class="container">
+<div class="header">
+<div style="font-size: 8px; text-align: left; padding-left: 8px; float: left;">Hostname: <?php echo exec('cat /etc/hostname'); ?></div><div style="font-size: 8px; text-align: right; padding-right: 8px;">Pi-Star:<?php echo $configPistarRelease['Pi-Star']['Version']?> / <?php echo $lang['dashboard'].": ".$version; ?></div>
+<!-- <h1>Pi-Star <?php echo $lang['digital_voice']." ".$lang['dashboard_for']." ".$MYCALL; ?></h1> -->
 <h1>K1LNX Repeater System - Knoxville, TN</h1>
 <p style="padding-right: 5px; text-align: right; color: #ffffff;">
  <a href="https://brandmeister.network/?page=hotspot&id=314700" style="color: #ffffff;"><?php echo $lang['repeaterinfo'];?></a> |
